@@ -1,0 +1,21 @@
+{
+  "environment": "single CPU core, Python behavioral emulation of V1Model pipeline, Ubuntu 22.04",
+  "firewall": {
+    "workload_packets": 20000,
+    "deny_traffic_fraction": 0.30,
+    "classification_accuracy_pct": 100.0,
+    "dropped_pct": 29.96,
+    "match_action_throughput_Mdecisions_per_s_per_core": 3.04,
+    "ns_per_decision": 329
+  },
+  "load_balancer": {
+    "backends": 4,
+    "flows": 2500,
+    "packets": 15000,
+    "per_flow_consistency_pct": 100.0,
+    "distribution_pct_15k": [24.48, 26.56, 26.68, 22.28],
+    "max_deviation_pct_15k": 2.72,
+    "distribution_pct_300k": [25.22, 24.78, 25.04, 24.96],
+    "max_deviation_pct_300k": 0.22
+  }
+}
